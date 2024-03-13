@@ -13,7 +13,7 @@ export default function GetAllQuotes() {
         {isSuccess?
             // <Loading/> 
             <QuoteCards data={filteredData}/>
-            :(isLoading || isFetching)?<Loading/>:
+            :(isLoading || isFetching)?<Loading className='h-[80vh]'/>:
                 <Error/>
             }
     </div>
